@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Inline Tables & DDS</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+
+        <div class="container-fluid">
+        <!-- ///heading -->
+            <div class="row">
+                <div class="col-xs-3" >
+                    
+                </div>
+                <div class="col-xs-6" >
+                    <div class="page-header text-center">
+                        
+                        <h1>Inline Table & DDS Auto Create</h1>
+                    </div>    
+                </div>
+                <div class="col-xs-3" >
+                    
+                </div>
+            </div>
+            <!--     //Sheet name, label, dropdown -->
+            <div class="row position">
+                <div class="col-xs-5" >
+                    <div class="row">
+                        <div class="col-xs-5" >
+                            <!-- <h2><span class="label label-default ">Enter Plu</span></h2> -->
+                            
+                        </div>
+                        <div class="col-xs-8 position" >
+                            <!-- <textarea class="text-input " rows="1" cols="15" id="text_input_plu"></textarea> -->
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-xs-5" >
+                    <div class="row">
+                        <div class="row">
+                        <div id="quote" >
+                            <textarea class="text-input" placeholder="Start typing.." rows="1" cols="25"  id="text_quote"></textarea>
+                        </div>
+                        <!-- <div class="col-xs-10 position" >
+                            <textarea class="text-input " rows="1" cols="40" id="title_field"></textarea>
+                        </div> -->
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xs-2 position" >
+            
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Select
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a  href="../Pdf_Link/index.html">Pdf Link</a></li>
+                              <li><a  href="../Plu_Collect/index.html">Plu Collect</a></li>
+                              <li><a  href="../Frys_Link/index.html">Frys Link</a></li>
+                              <li><a  href="../Ascii_Tag_Check/index.html">Ascii Check</a></li>
+                             <li><a  href="../Specification_Table/index.html">Specification Table</a></li>
+                              <li><a  href="../Email_Processing_Link_Testing/index.html">Email Processing Link Testing</a></li>
+                              <li><a  href="../Email_Processing_Link_Creation/index.html">Email Processing Link Creation</a>
+                             
+                                <li><a  href="../Webami_Sheet_Autofill/index.html">M2 Product Creator Updated</a></li>
+                              
+                            </ul>
+                         </div>
+                     
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 position">
+                <b>Enter Sheet Data</b>
+                </div>
+                <div class="col-xs-4 position">
+                <b>Inline Table</b>
+                </div>
+                <div class="col-xs-4 position">
+                <b>Data for Updating</b>
+                </div>
+            </div>
+                <!-- //2 textarea -->
+            <div class="row position">
+                <div class="col-xs-4 " >
+                    <textarea class="text-input" placeholder="Start typing.." rows="10" cols="40"  id="text_sheet"></textarea>
+                </div>
+                <div class="col-xs-4" >
+                    <textarea class="text-output" rows="10" cols="40"  id="text_inline"></textarea>
+                </div>
+                <div class="col-xs-4 " >
+                    <textarea class="text-input" placeholder="Start typing.." rows="10" cols="40"  id="text_update_data"></textarea>
+                </div>
+            </div>
+            <!--     //2 button -->
+            <div class="row position">
+                
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-success btn-lg clic">Click</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default btn-lg clear1">Clear</button>
+                        </div>
+                    
+                
+            </div>
+
+                <div class="modal" id="feature_modal">
+ 
+                  <div class="modal-content animate" >
+    <!-- /////2nd//////product page START////////// -->
+   <!--  <div class="imgcontainer"> -->
+      
+                    <div class="row">
+                        
+                            <div id="c_status_label" style="position: relative; left: 15px; "></div>
+                    </div>
+                    <div class="row">
+                        
+                            <div id="checkbox_area" style="position: relative; left: 15px; "></div>
+                    </div>
+                    
+                        <div class="row">
+                        
+                            <textarea class="text-input" placeholder="Start typing.." rows="1" cols="20"  id="pop_sheet_input_field" style="position: absolute; left: 15px; bottom:1px;"></textarea>
+                            <!-- <div id="query_label" style="position: absolute; left: 15px;">Query</div>
+                            <label class="radio-inline">
+                              <input type="radio" name="queryradio" checked>No
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="queryradio">Yes
+                            </label>
+
+                            <div id="review_label" style="position: absolute; left: 15px;">Review</div>
+                            <label class="radio-inline1">
+                              <input type="radio" name="reviewradio" checked>No
+                            </label>
+                            <label class="radio-inline1">
+                              <input type="radio" name="reviewradio">Yes
+                            </label> -->
+                           
+                        </div>
+
+                        <div class="row">    
+                            <button type="button" class="btn btn-default btn-lg" id="pop_sheet_submit_btn" style="position: absolute; left: 15px; ">submit</button>
+                        </div>
+                    
+                
+        
+                </div>
+                <!-- <iframe id="local_file" name="local_file"
+                    src="file:///home/princesethi/Downloads/webam.sh"
+                    height=0 width=0>
+                </iframe> -->
+
+              </div>
+              
+        </div>
+    </body>            
+
+ </html>

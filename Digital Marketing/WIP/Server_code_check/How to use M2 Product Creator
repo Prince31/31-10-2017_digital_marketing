@@ -1,0 +1,25 @@
+ How to use M2 Product Creator
+
+Step 1 : -   Create a folder named “webami” on your desktop.
+Step 2 : -   Open M2 Product Creator in browser.
+Step 3 : -   Enter Plu  in “Enter Plu” Field in M2 Product Creator.
+Step 4 : -   Search your product on webami website using upc. 
+Step 5 : -   Verify your product whether it is correct or not.
+Step 6 : -   Press F12 or right click & Inspect Element.
+Step 7 : -   Select Inspector tab, Close body tag and copy it.
+Step 8 : -   Paste this body tag in “HTML” Field in M2 Product Creator. 
+
+In case upper description is not present on webami website and you want to add it  from any  other third party competitor website then follow the below steps.
+a: - Search and copy the required content for upper description from third party competitor website.
+b: - Paste the copied content in M2 product creator in the field 'Upper From Third Party Websites'.
+
+Step 9 : -   Now press on “Click” button. 
+Step 10 : -   A Pop-up will appear. Click on “Save File”.
+Step 11 : -   Open Terminal on your system
+Step 12 : -   Enter command “cd Downloads” to access the Downloads folder (Only once when you open Terminal).
+Step 13 : -   Enter command “chmod 755 webam.sh”
+Step 14 : -   Now Enter command “./webam.sh” and your product is created  in “webami” folder on Desktop.
+Step 15 : -   Test your product manually before sharing it.
+Step 16 : -   Press Clear button before creating new one.
+
+

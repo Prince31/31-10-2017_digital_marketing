@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Inline Tables & DDS</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="css/main.css">
+
+         <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+        <!-- ///heading -->
+            <div class="row one">
+                <div class="col-xs-3" >
+                    
+                </div>
+                <div class="col-xs-6" >
+                    <div class="page-header text-center">
+                        
+                        <h1>Delivery Task Made Easy</h1>
+                    </div>    
+                </div>
+                <div class="col-xs-3" >
+                    
+                </div>
+            </div>
+            <!--     //Sheet name, label, dropdown -->
+            <div class="row position1">
+
+                <div class="col-xs-4 " >
+                  
+                        <div id="quote" >
+                            <textarea class="text-input " placeholder="Start typing.." rows="1" cols="25"  id="text_quote"></textarea>
+                        </div>
+                        <!-- <div class="col-xs-10 position" >
+                            <textarea class="text-input " rows="1" cols="40" id="title_field"></textarea>
+                        </div> -->
+                  
+                </div>
+                <div class="col-xs-4" >
+                    <button type="button" class="btn btn-success btn-lg bt2" id="status_mail_btn">STATUS MAIL</button>
+                </div>
+                <div class="col-xs-4" >
+            
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-lg bt3" type="button" data-toggle="dropdown">SELECT
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a  href="../Pdf_Link/index.html">Pdf Link</a></li>
+                              <li><a  href="../Plu_Collect/index.html">Plu Collect</a></li>
+                              <li><a  href="../Frys_Link/index.html">Frys Link</a></li>
+                              <li><a  href="../Ascii_Tag_Check/index.html">Ascii Check</a></li>
+                             <li><a  href="../Specification_Table/index.html">Specification Table</a></li>
+                              <li><a  href="../Email_Processing_Link_Testing/index.html">Email Processing Link Testing</a></li>
+                              <li><a  href="../Email_Processing_Link_Creation/index.html">Email Processing Link Creation</a></li>
+                             
+                                <li><a  href="../Webami_Sheet_Autofill/index.html">M2 Product Creator Updated</a></li>
+                            
+                            </ul>
+                         </div>
+                     
+                </div>
+            </div>
+<!--             <div class="row">
+                <div class="col-xs-4 position">
+                <b>Enter Sheet Data</b>
+                </div>
+                <div class="col-xs-4 position">
+                <b>Inline Table</b>
+                </div>
+              
+            </div> -->
+                <!-- //2 textarea -->
+            <div class="row position">
+
+                <div class="col-xs-6" >
+                    <h4><b>Enter Sheet Data</b><h4>
+                    <textarea class="text-input" placeholder="Start typing.." rows="10" cols="40"  id="text_sheet"></textarea>
+                </div>
+                <div class="col-xs-6" >
+                      <h4><b>Inline Table</b></h4>
+                    <textarea class="text-output" rows="10" cols="40"  id="text_inline"></textarea>
+                </div>
+            </div>
+            <!--     //2 button -->
+            <div class="row position">
+                
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default btn-lg clic bt5">Click</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default btn-lg clear1 bt6">Clear</button>
+                        </div>
+                    
+                
+            </div>
+
+            <div class="modal" id="status_mail_modal">
+                
+                     <span onclick="document.getElementById('status_mail_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <div class="modal-content animate" >
+
+            <div class="row position">
+                     <div class="row position">
+                        <div class="col-xs-12" id="recepients">
+                            Manoj Kumar &#60;manoj.kumar@trantorinc.com&#62;,
+                            Mandeepinder Singh &#60;mandeepinder.singh@trantorinc.com&#62;,
+                            Rajat Julka &#60;rajat.julka@trantorinc.com&#62;,
+                            Hank Everson &#60;hee@i.frys.com&#62;,
+                            Dept3 &#60;dept3@trantorinc.com&#62;
+                        </div> 
+                    </div>
+                    <div class="row position">
+                        <div class="col-xs-12" id="subject">
+                            
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="upper_data">
+                            Hi Indy,
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="otp_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="set_online_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="instock_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="one_category_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="sheets_data">
+                            <table class="table mail-border" id="sheets_data_table">
+                                
+                                    <tr class="mail-border" id="sheets_data_tr1">
+                                    </tr>
+                                
+                            </table>    
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="client_mails_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="query_data">
+
+                        </div>
+                    </div> 
+                    <div class="row position">
+                        <div class="col-xs-12" id="lower_data">
+
+                        </div>
+                    </div> 
+                    
+                
+            </div>
+         </div>
+         </div>   
+         <div class="modal" id="start_modal">
+            <h1>DELIVERY TASK MADE EASY</h1>
+ 
+                  <div class="modal-content animate new" >
+                    <div class="row center">
+
+
+                        <h3>Enter Working WorkSheet URL</h3>
+                    </div>
+                     <div class="row center">
+                     <textarea class="text-input" placeholder="Start typing.." rows="20" cols="40"  id="sheet_url_input_field" style="position: relative; left: 15px; "></textarea>
+                    </div>
+
+                    <div class="row bt">
+                        <button type="button" class="btn btn-default btn-lg bt1" id="sheet_url_submit_btn">Submit</button>
+                        <button type="button" class="btn btn-default btn-lg bt4" id="sheet_url_skip_btn">Skip</button>
+                    </div>
+                  </div>
+         </div>         
+
+                <div class="modal" id="feature_modal">
+ 
+                  <div class="modal-content animate  bg12" >
+    <!-- /////2nd//////product page START////////// -->
+   <!--  <div class="imgcontainer"> -->
+      
+                    <div class="row">
+                        <!--   -->
+                        
+                            <div id="c_status_label" style="position: relative; left: 15px; "><h2 id="c_status_label_h2"></h2></div>
+
+
+                           
+
+                            <!-- <label class="checkbox-inline leftClass">
+                              <input type="checkbox" value="Yes">Yes
+                            </label>
+                            <label class="checkbox-inline leftClass">
+                              <input type="checkbox" value="No">No
+                            </label>
+                            <label class="leftClass">Query</label>
+                            <div></div>
+                           
+
+                            <label class="checkbox-inline leftClass">
+                              <input type="checkbox" value="Yes">Yes
+                            </label>
+                            <label class="checkbox-inline leftClass">
+                              <input type="checkbox" value="No">No
+                            </label>
+                             <label class="leftClass">Review</label>
+ -->
+
+
+                           <!--  <div id="query_label" style="position: relative; left: 15px; top: 20%;"> <b>Query:</b>
+                            <label class="radio-inline" style="left: 20px;">
+                              <input type="radio" name="queryradio" >Yes
+                            </label>
+                            <label class="radio-inline" style="left: 20px;">
+                              <input type="radio" name="queryradio" checked>No
+                            </label>
+                            </div>
+                            <div id="review_label" style="position: relative; left: 15px; top: 20%;"><b>Review:</b>
+                            <label class="radio-inline" style="left: 11px;">
+                              <input type="radio" name="reviewradio" >Yes
+                            </label>
+                            <label class="radio-inline" style="left: 11px;">
+                              <input type="radio" name="reviewradio" checked>No
+                            </label>
+                            </div> -->
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-2" id="ctc_checkbox_area" style="position: relative; left: 15px";></div>
+                            <div class="col-xs-10" id="checkbox_area" style="position: relative; left: 15px; "></div>
+                    </div>
+                    
+                        <div class="row">
+                            <!-- <textarea class="text-input" placeholder="Text Field.." rows="1" cols="1"  id="pop_sheet_input_field" style="position: absolute;"></textarea> -->
+
+<!-- 
+                            <textarea class="text-input" placeholder="Text Field.." rows="1" cols="1"  id="pop_sheet_input_field" style="position: relative; left: 15px;"></textarea> -->
+                            <form><input id="pop_sheet_input_field" style="position: absolute;" type="text" placeholder="Text Field.."/></form>
+                           
+                        </div>
+
+                        <div class="row">    
+                            <button type="button" class="btn btn-default btn-lg bt1" id="pop_sheet_submit_btn" style="position: absolute; left: 15px; ">Submit</button>
+                            <button type="button" class="btn btn-default btn-lg" id="pop_sheet_skip_btn" style="position: absolute; left: 63%; ">Skip</button>
+                        </div>
+                    
+                
+        
+                </div>
+                <!-- <iframe id="local_file" name="local_file"
+                    src="file:///home/princesethi/Downloads/webam.sh"
+                    height=0 width=0>
+                </iframe> -->
+
+              </div>
+              
+        </div>
+    </body>            
+
+ </html>

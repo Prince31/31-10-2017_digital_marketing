@@ -1,0 +1,2 @@
+shotpt -s globstar
+rename 's/prod/big/' **

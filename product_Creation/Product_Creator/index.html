@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Product Creator</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--         <link rel="stylesheet" type="text/css" href="css/template.css">
+ -->        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://images.frys.com/art/css/product_page.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+        <!-- ///heading -->
+            <div class="row">
+                <div class="col-xs-3" >
+                    <img src="images/M2.png" width="200px"; height="150px";>
+                </div>
+                <div class="col-xs-6" >
+                    <div class="page-header text-center">
+                        
+                        <h1>Product Creator</h1>
+                    </div>    
+                </div>
+                <div class="col-xs-3" style="padding-top: 40px; ">
+                    <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Select
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a target="_blank" href="../Data_Compare/index.html">Data Compare</a></li>
+                             <li><a  href="../Frys_Link/index.html">Frys Link</a></li>
+                              <li><a  href="../Pdf_Link/index.html">Pdf Link</a></li>
+                              <li><a  href="../Li_Code/index.html">Li_Code</a></li>
+                             
+                              
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+              <button type="button" class="btn btn-success btn-lg" id="gallery">Gallery</button>
+              <button type="button" class="btn btn-success btn-lg" id="upper">Upper</button>
+            <button type="button" class="btn btn-success btn-lg" id="features">Features</button>
+            <button type="button" class="btn btn-success btn-lg" id="specification">Specification</button>
+            
+            </div>
+            
+        
+
+
+<div class="modal" id="feature_modal">
+  
+  <div class="modal-content animate" >
+    <!-- /////2nd//////product page START////////// -->
+   <!--  <div class="imgcontainer"> -->
+      <span onclick="document.getElementById('feature_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+            
+            <div class="row">
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-success btn-sm" id="back_btn">Back</button>
+              </div>
+              <div class="col-sm-3" id="col_no">Col No.</div>
+              <div class="col-sm-3" style="position: relative; left: -48px;"><input type="number" value="0" min="0" max="100" id="col_no_field"></div>
+
+
+                <div class="col-sm-3 dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" id="col_type_drop">Col Type <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li class="drop" id="drop_1">One Col</li>
+                             <li class="drop" id="drop_2">Two Col Hor</li>
+                              <li class="drop" id="drop_3">Two Col Ver</li>
+                              <li class="drop" id="drop_4">Three Col</li>
+                             
+                              
+                            </ul>
+                        </div>
+            </div>  
+
+            <div class="row">
+                <div class="col-sm-4" id="head1">Head</div>  <!-- id=pop_name -->
+                <div class="col-sm-4" id="head2">Head</div>
+                <div class="col-sm-4" id="head3">Head</div>
+             </div>
+             <div class="row"> 
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="head_field1"></textarea>    <!-- id=data_field -->
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="head_field2"></textarea>
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="head_field3"></textarea>
+               </div>
+                
+             </div> 
+
+             <div class="row">
+                <div class="col-sm-4" id="text1">Text</div>
+                <div class="col-sm-4" id="text2">Text</div>
+                <div class="col-sm-4" id="text3">Text</div>
+             </div>
+             <div class="row"> 
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="10" cols="20"  id="text_field1"></textarea>
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="10" cols="20"  id="text_field2"></textarea>
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="10" cols="20"  id="text_field3"></textarea>
+               </div>
+                
+             </div> 
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <button type="button" class="btn btn-success btn-sm" id="expand_btn1">Expand</button>
+               </div>
+                <div class="col-xs-4">
+                  <button type="button" class="btn btn-success btn-sm" id="expand_btn2">Expand</button>
+               </div>
+                <div class="col-xs-4">
+                  <button type="button" class="btn btn-success btn-sm" id="expand_btn3">Expand</button>
+               </div>
+                
+              </div>  
+
+             <div class="row">
+                <div class="col-sm-4" id="image1">Image</div>
+                <div class="col-sm-4" id="image2">Image</div>
+                <div class="col-sm-4" id="image3">Image</div>
+             </div>
+             <div class="row"> 
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="image_field1"></textarea>
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="image_field2"></textarea>
+               </div>
+               <div class="col-xs-4">
+                <textarea class="text-input"  rows="1" cols="20"  id="image_field3"></textarea>
+               </div>
+                
+             </div> 
+
+                 
+          
+            <div class="row">
+              
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-success btn-sm" id="done_btn">Done</button>
+               </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-success btn-sm" id="image_btn">Image</button>
+               </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-success btn-sm" id="add_btn">Add</button>
+               </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-success btn-sm" id="del_btn">Delete</button>
+               </div>
+               <div class="col-xs-2">
+                  <button type="button" class="btn btn-success btn-sm" id="edit_btn">Edit</button>
+               </div>
+               <div class="col-xs-2">
+                  <!-- <button type="button" class="btn btn-success btn-sm" id="pop_next">Edit</button> -->
+               </div>
+                
+            </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+            
+        
+        </div>
+
+        
+        <!-- <div class="container-fluid template">
+            
+
+        </div> -->
+
+        <div class="modal" id="expand_modal">
+  
+          <div class="modal-content animate" >
+            <span onclick="document.getElementById('expand_modal').style.display='none'" class="close" title="Close Modal">&times;</span>  
+              <textarea class="text-input"  rows="20" cols="80"  id="expand_field"></textarea>
+          </div>
+        </div>    
+    </body>            
+
+ </html> 
+
+<div class="template" id="template" >
+                
+                </div>
+
+<button type="button" class="btn btn-success btn-lg" id="create">Create</button>

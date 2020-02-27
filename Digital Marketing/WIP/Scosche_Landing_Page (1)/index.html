@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Frys.com | Scosche</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="https://images.frys.com/art/deals/tralfaz/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script type="text/javascript" src="json/data.json"></script>
+      <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+      <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+       <script type="text/javascript" src="js/main.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid scosche-page">
+         <div class="row">
+            <div class="col-xs-12">
+               <a href="https://www.frys.com?emailsignuppage"><img class="img-responsive" src="https://images.frys.com/art/misc/fryslogo.png"></a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 redseparator"></div>
+         </div>
+         <div class="row logo">
+            <div class="col-sm-12 scosche_logo">
+               <div class="text-center">
+                  <img class="img-fluid" src="images/image1.png">
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12 scosche_parts">
+               <div class="text-center text1">
+                  <h4><b>CAR INSTALLATION PARTS</b></h4>
+
+               </div>
+               <hr />
+            </div>
+         </div>
+         <div class="row row1">
+            <div class="col-sm-6 scosche_info">
+               <div class="text-center">
+                     <p class="para1">Scosche is Driven By Sound&#8482;</p>
+                     <p class="para2">We have everything you need to replace your vehicle's standard factory stereo with your dream audio system! Browse through an extensive selection of car audio installation products - from "Harnesses and Interfaces" to "Hardware and Wiring" and much more.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 scosche_list">
+               <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                     <label class="input-group-text input" for="inputGroupSelect01">Year</label>
+                  </div>
+                  <select class="custom-select" id="year">
+                     <option value="">-- Select Year --</option>
+
+                  </select>
+                 
+               </div>
+               <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                     <label class="input-group-text input" for="inputGroupSelect01">Make</label>
+                  </div>
+                  <select class="custom-select" id="make">
+                      <option value="">-- Select Make --</option>
+                  </select>
+               </div>
+               <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                     <label class="input-group-text input" for="inputGroupSelect01">Model</label>
+                  </div>
+                  <select class="custom-select" id="model">
+                      <option value="">-- Select Model --</option>
+                  </select>
+               </div> 
+               <div class="text">
+                  <button href="" type="button" id="show" class="btn btn-dark">GET PARTS</button>
+               </div>
+            </div>
+         </div>
+         <!-- <div id="show">Click to Show/ Hide div</div> -->
+         <div class="row out" style="display: none;">
+            <div class="col-sm-6 output1">
+               <div class="text-center">
+                  <h1 class="head1">Single DIN</h1>
+                  <h3 id="plu1"></h3>
+                  <div id="prod_img1" style="height:300px;"></div>
+                  <!-- <img id="prod_img1" class="img-fluid zoom" width="70%"> -->
+               <div class="text-center">
+                  <button type="button" class="btn btn-dark">SHOW MORE</button>
+               </div>
+               </div>
+            </div>
+            <div class="col-sm-6 output2">
+              <div class="text-center">
+                  <h1>Double DIN</h1>
+                  <h3 id="plu2"></h3>
+                  <div id="prod_img2" style="height:300px;"></div>
+                 <!--  <img class="img-fluid zoom" src="images/dummy.jpg" width="70%"> -->
+               <div class="text-center">
+                  <button type="button" class="btn btn-dark">SHOW MORE</button>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
